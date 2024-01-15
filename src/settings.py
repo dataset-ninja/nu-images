@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "nuImages"
-PROJECT_NAME_FULL: str = "nuScenes: A multimodal dataset for autonomous driving"
+PROJECT_NAME_FULL: str = "nuImages: A multimodal dataset for autonomous driving"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
@@ -34,7 +34,7 @@ ANNOTATION_TYPES: List[AnnotationType] = [
     AnnotationType.ObjectDetection(),
 ]
 
-RELEASE_DATE: Optional[str] = "2020-05-05"  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2020-04-30"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
@@ -83,7 +83,9 @@ ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "NuTonomy"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://motional.com/"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "__PRETEXT__": "Additionally, labels have ***supercategory*** tag, ***attribute description***, ***attribute name***, ***description***. Also every image contains information about its ***subfolder***. Explore it in supervisely labeling tool"
+}
 TAGS: Optional[List[str]] = None
 
 
