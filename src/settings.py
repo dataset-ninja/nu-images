@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "nuImages"
-PROJECT_NAME_FULL: str = "nuImages: A multimodal dataset for autonomous driving"
+PROJECT_NAME_FULL: str = "nuImages: A Multimodal Dataset for Autonomous Driving"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
@@ -53,7 +53,33 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/nu-images"
 DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://www.nuscenes.org/nuimages#download"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "adult": [230, 25, 75],
+    "ambulance": [60, 180, 75],
+    "animal": [255, 225, 25],
+    "barrier": [0, 130, 200],
+    "bendy": [245, 130, 48],
+    "bicycle": [145, 30, 180],
+    "bicycle rack": [70, 240, 240],
+    "car": [240, 50, 230],
+    "child": [210, 245, 60],
+    "construction": [250, 190, 212],
+    "construction worker": [0, 128, 128],
+    "debris": [220, 190, 255],
+    "driveable surface": [170, 110, 40],
+    "motorcycle": [255, 250, 200],
+    "personal mobility": [128, 0, 0],
+    "police": [170, 255, 195],
+    "police officer": [128, 128, 0],
+    "pushable pullable": [255, 215, 180],
+    "rigid": [0, 0, 128],
+    "stroller": [0, 255, 0],
+    "trafficcone": [160, 82, 45],
+    "trailer": [144, 238, 144],
+    "truck": [255, 192, 203],
+    "wheelchair": [244, 164, 96],
+    "ego": [30, 30, 30],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
@@ -84,7 +110,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://motional.com/"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, labels have ***supercategory*** tag, ***attribute description***, ***attribute name***, ***description***. Also every image contains information about its ***subfolder***. Explore it in supervisely labeling tool"
+    "__PRETEXT__": "Additionally, labels have ***supercategory*** tag, ***attribute description***, ***attribute name***, ***description***. Also every image contains information about its ***camera***. Explore it in supervisely labeling tool"
 }
 TAGS: Optional[List[str]] = None
 

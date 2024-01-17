@@ -250,7 +250,7 @@ def convert_and_upload_supervisely_project(
         "vehicle.truck": "vehicle",
     }
 
-    subfolder_meta = sly.TagMeta("subfolder", sly.TagValueType.ANY_STRING)
+    subfolder_meta = sly.TagMeta("camera", sly.TagValueType.ANY_STRING)
     class_descr_meta = sly.TagMeta("description", sly.TagValueType.ANY_STRING)
     attribute_name_meta = sly.TagMeta("attribute name", sly.TagValueType.ANY_STRING)
     attribute_descr_meta = sly.TagMeta("attribute description", sly.TagValueType.ANY_STRING)
