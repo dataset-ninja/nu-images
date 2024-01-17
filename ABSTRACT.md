@@ -18,7 +18,20 @@ The authors labeled a total of 93,000 images with instance masks and 2d boxes fo
 
 The foreground objects additionally have attribute annotations such as whether a motorcycle has a rider, the pose of a pedestrian, the activity of a vehicle, flashing emergency lights and whether an animal is flying.
 
-<img src="https://github.com/dataset-ninja/nu-images/assets/120389559/7cad3010-1122-42bd-b063-4c5870f3e1f6" alt="image" width="800">
+| Attribute                                | Frequency | Ratio in this attribute group |
+|------------------------------------------|-----------|--------------------------------|
+| cycle.with_rider                         | 8,075     | 22.4%                          |
+| cycle.without_rider                      | 28,036    | 77.6%                          |
+| pedestrian.moving                        | 102,066   | 61.4%                          |
+| pedestrian.sitting_lying                  | 16,378    | 9.9%                           |
+| pedestrian.standing                       | 47,702    | 28.7%                          |
+| vehicle.moving                            | 116,855   | 38.3%                          |
+| vehicle.parked                            | 162,360   | 53.2%                          |
+| vehicle.stopped                           | 25,775    | 8.5%                           |
+| vehicle_light.emergency.flashing          | 33        | 18.0%                          |
+| vehicle_light.emergency.not_flashing      | 150       | 82.0%                          |
+| vertical_position.off_ground              | 33        | 12.9%                          |
+| vertical_position.on_ground               | 222       | 87.1%                          |
 
 <span style="font-size: smaller; font-style: italic;">Attribute frequencies (excl. test set).</span>
 
