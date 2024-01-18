@@ -15,7 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "nuImages"
 PROJECT_NAME_FULL: str = "nuImages: A Multimodal Dataset for Autonomous Driving"
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
@@ -110,7 +110,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://motional.com/"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, labels have ***supercategory*** tag, ***attribute desc***, ***attribute***, ***category desc***. Also every image contains information about its ***sensor***"
+    "__PRETEXT__": "Additionally, labels have ***category*** tag, ***attribute desc***, ***attribute***, ***category desc***. Also every image contains information about its ***sensor***"
 }
 TAGS: Optional[List[str]] = None
 

@@ -35,6 +35,6 @@ The foreground objects additionally have attribute annotations such as whether a
 
 <span style="font-size: smaller; font-style: italic;">Attribute frequencies (excl. test set).</span>
 
-An ***attribute description*** is a property of an instance that can change while the category remains the same. Example: a vehicle being parked/stopped/moving, and whether or not a bicycle has a rider. ***supercategory*** is used for the taxonomy of object and surface categories. Example: vehicle -> car.
+An ***attribute desc*** is a property of an instance that can change while the category remains the same. Example: a vehicle being parked/stopped/moving, and whether or not a bicycle has a rider. ***category*** is used for the taxonomy of object and surface categories. Example: vehicle -> car.
 
 
