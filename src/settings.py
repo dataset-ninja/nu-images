@@ -112,7 +112,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://motional.com/"
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
     "__PRETEXT__": "Additionally, labels have ***category*** tag, ***attribute desc***, ***attribute***, ***category desc***. Also every image contains information about its ***sensor***"
 }
-TAGS: Optional[List[str]] = None
+TAGS: Optional[List[str]] = ["multi-modal"]
 
 
 SECTION_EXPLORE_CUSTOM_DATASETS: Optional[List[str]] = None
