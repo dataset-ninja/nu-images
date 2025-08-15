@@ -1,6 +1,6 @@
 Dataset **nuImages** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzMzNDhfbnVJbWFnZXMvbnVpbWFnZXMtRGF0YXNldE5pbmphLnRhciIsICJzaWciOiAiRE1JU3Fld0tsOStIeXQvVmo0dkFRQzhTMFpyMGdvejlYaVg1ZW8wdUVrND0ifQ==)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogInMzOi8vc3VwZXJ2aXNlbHktZGF0YXNldHMvMzM0OF9udUltYWdlcy9udWltYWdlcy1EYXRhc2V0TmluamEudGFyIiwgInNpZyI6ICJLb0x1VE45eVFzY2pvMjdXY1Exd2lhV2t3UER5c0duNkY2TXJjSDVxUGgwPSJ9?response-content-disposition=attachment%3B%20filename%3D%22nuimages-DatasetNinja.tar%22)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
